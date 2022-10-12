@@ -33,7 +33,7 @@ curl --request POST \
     --data '{
         "client_id": "9uKHFvrIwkJGb0U73GRyalb6emEWAf92",
         "client_secret": "X1uYb9hR7KL-NH5RkkJFFhYnH-9hcgR4o-W21FDFfHjzVu8HyY3b3FRmLE0-aj3D",
-        "audience": "https://organization.hub.flexfintx.com/v1/",
+        "audience": "https://dev-jvfb7la4.us.auth0.com/api/v2/",
         "grant_type": "client_credentials"
     }'
 
@@ -60,7 +60,7 @@ var requestOptions = {
   redirect: "follow",
 };
 
-fetch("https://flexfintx.us.auth0.com/oauth/token", requestOptions)
+fetch("https://dev-jvfb7la4.us.auth0.com/api/v2/", requestOptions)
   .then((response) => response.text())
   .then((result) => console.log(result))
   .catch((error) => console.log("error", error))
