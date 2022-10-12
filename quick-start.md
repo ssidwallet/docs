@@ -29,7 +29,7 @@ Flex Hub uses OAuth2 Client Credentials to allow access to the API. As part of o
 {% tab title="Shell" %}
 ```shell
 curl --request POST \
-    --url https://flexfintx.us.auth0.com/oauth/token \
+    --url https://dev-jvfb7la4.us.auth0.com/api/v2/ \
     --data '{
         "client_id": "9uKHFvrIwkJGb0U73GRyalb6emEWAf92",
         "client_secret": "X1uYb9hR7KL-NH5RkkJFFhYnH-9hcgR4o-W21FDFfHjzVu8HyY3b3FRmLE0-aj3D",
@@ -49,7 +49,7 @@ var raw = JSON.stringify({
   client_id: "9uKHFvrIwkJGb0U73GRyalb6emEWAf92",
   client_secret:
     "X1uYb9hR7KL-NH5RkkJFFhYnH-9hcgR4o-W21FDFfHjzVu8HyY3b3FRmLE0-aj3D",
-  audience: "https://organization.hub.flexfintx.com/v1/",
+  audience: "https://dev-jvfb7la4.us.auth0.com/api/v2/",
   grant_type: "client_credentials",
 });
 
