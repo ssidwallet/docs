@@ -115,7 +115,9 @@ Unsupported methods and key types result in `400 Bad Request` errors with meanin
 
 {% tabs %}
 {% tab title="shell" %}
-
+curl --request GET\
+\--url https://organization.hub.flexfintx.com/v1/dids\
+\--header 'Authorization: Bearer \<ACCESS\_TOKEN>' \\
 {% endtab %}
 
 {% tab title="Javascript" %}
